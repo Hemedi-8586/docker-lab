@@ -13,8 +13,8 @@ services:
   web-lab:
     image: php:8.2-apache
     restart: always
-    volumes:
-      - /home/docker-lab:/var/www/html
+      volumes:
+      - ./src:/var/www/html
     ports:
       - "8081:80"
     depends_on:

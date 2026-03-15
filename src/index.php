@@ -1,6 +1,6 @@
 <?php
 $host = 'db-lab'; // Jina tuliloweka kwenye docker-compose
-$user = 'admin';
+$user = 'root';
 $pass = 'hemedi_pass';
 $db   = 'mazoezi_db';
 
