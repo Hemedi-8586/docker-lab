@@ -13,7 +13,7 @@ services:
   web-lab:
     image: php:8.2-apache
     restart: always
-      volumes:
+    volumes:            # Sasa imekaa sawa na 'image'
       - ./src:/var/www/html
     ports:
       - "8081:80"
