@@ -10,5 +10,5 @@ if ($conn->connect_error) {
     die("Duh! Database imekataa: " . $conn->connect_error);
 }
 
-echo "<h1>Hongera Hemedi! Website na Database zimeungana ndani ya Docker!</h1>";
+echo "<h2>Hongera Hemede! Website na Database zimeungana ndani ya Docker!</h2>";
 ?>
