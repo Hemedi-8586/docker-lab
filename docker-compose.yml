@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db-lab:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: mazoezi_db
+      MYSQL_ROOT_PASSWORD: hemedi_pass
+    ports:
+      - "3307:3306"
+
+  web-lab:
+    image: php:8.2-apache
+    restart: always
+    volumes:
+      - /home/docker-lab:/var/www/html
+    ports:
+      - "8081:80"
+    depends_on:
+      - db-lab
